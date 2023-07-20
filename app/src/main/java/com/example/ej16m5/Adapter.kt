@@ -1,5 +1,4 @@
 package com.example.ej16m5
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -47,8 +46,6 @@ class Adapter: RecyclerView.Adapter<Adapter.ViewHolder>() {
 
 
      }
-         interface PaisCallback{
-             fun showcountry(s:String)
+
          }
 
-}

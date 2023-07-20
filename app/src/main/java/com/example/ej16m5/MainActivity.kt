@@ -4,7 +4,7 @@ import android.os.Bundle
 import com.example.ej16m5.databinding.ActivityMainBinding
 
 
-class MainActivity : AppCompatActivity(), Adapter.PaisCallback {
+class MainActivity : AppCompatActivity(), PaisCallback {
     lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity(), Adapter.PaisCallback {
         val adapter = Adapter()
         adapter.setData(PaisesLatam.paises)
         adapter.callback= this
-        binding.recyclerView.adapter
+        binding.recyclerView.adapter=adapter
 
     }
 
