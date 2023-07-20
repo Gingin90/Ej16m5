@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(), Adapter.PaisCallback {
     }
 
     override fun showcountry(s: String) {
-        binding.textView2.text= s
+        binding.textViewP.text= s
     }
 
 

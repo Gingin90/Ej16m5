@@ -32,9 +32,9 @@ class Adapter: RecyclerView.Adapter<Adapter.ViewHolder>() {
          this.paises = ListaPaises.toMutableList()
      }
 
-      inner class ViewHolder( val binding : ItemBinding):RecyclerView.ViewHolder(binding.root){
+      inner class ViewHolder( val binding :ItemBinding):RecyclerView.ViewHolder(binding.root){
          fun bind(pais:Pais){
-             binding.textViewList.text= pais.nombre
+             binding.textViewList.text = pais.nombre
              binding.imageView.load(pais.imgUrl)
              binding.cardView.setOnClickListener(View.OnClickListener {
                  val texto = "Pais:${pais.nombre} Poblacion:${pais.poblacion}"
