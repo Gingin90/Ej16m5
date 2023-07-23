@@ -5,6 +5,7 @@
     android:id="@+id/constraintlay"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#AE9ECA"
     tools:context=".MainActivity">
 
     <TextView
@@ -16,6 +17,7 @@
         android:layout_marginEnd="16dp"
         android:text="TextView"
         android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
